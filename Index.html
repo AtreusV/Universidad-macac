@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad macaco</title>
+    
+    <link rel="stylesheet" href="/img">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- others-->
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+
+    <!-- HEADER -->    
+    <nav class="py-2 border-bottom d-flex align-items-center" style="background-color: rgb(155, 58, 58); height: 20%;">
+        <a class="navbar-brand" href="#"  style="width: 8%">
+            <img src="/img/Logo-Universitario.png" alt="" class="img-fluid";>
+        </a>
+        <div class="container d-flex lign-content-center">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#Registrations" class="nav-link link-light px-2 active" aria-current="page">Inscripciones</a></li>
+                <li class="nav-item"><a href="#news" class="nav-link link-light px-2">Noticias</a></li>
+                <li class="nav-item"><a href="#AboutUs" class="nav-link link-light px-2">Sobre nosotros</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="Sign-in.html" class="nav-link link-light px-2">Login</a></li>
+                <div class="d-flex">
+                    <li class="nav-item bg-primary rounded-3"><a href="Sign-in.html" class="nav-link link-light px-2">Sign up</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- CAROUSEL -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <img src="/img/carrusel1.jpeg" alt="" class="img-fluid">
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-center p-2" id="Carousel-txt">
+                        <h1>Ven a visitarnos</h1>
+                        <p>Vive la experiencia en nuestra universidad. </p>
+                        <p><a class="btn btn-lg btn-danger" href="#">¡Vamos!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <img src="/img/carrusel2.jpg" alt="" class="img-fluid">
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-center p-2" id="Carousel-txt">
+                        <h1>Inscribete ahora</h1>
+                        <p> Vive la experiencia en nuestra universidad. </p>
+                        <p><a class="btn btn-lg btn-danger" href="#">¡Vamos!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777"/>
+                    <img src="/img/carrusel3.png" alt="" class="img-fluid">
+                </svg>
+
+                <div class="container" id="Carousel-txt">
+                    <div class="carousel-caption text-end" id="Carousel-txt">
+                        <h1>Aprende cada dia</h1>
+                        <p>Estamos buscando estudiantes con animos de querer aprender cada dia y superarse a si mismos. </p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- ALBUM --> 
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <h2 id="news">Noticias</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="rounded mx-auto d-block" style="width: 90%; height: 100%;">
+                            <img src="img/info1.jpg" class="img-thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <h5>Cuidado con las caidas</h5>
+                            <p class="card-text">Continuamos promoviendo la cultura del autocuidado, por eso el SG-SST les invita a evitar las caídas por estar distraído.</p>
+                            <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+                                <div class="btn-group justify-content-md-end">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/info2.jpeg" alt="" class="img-thumbnail bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <h5>Experiencia que trasciende fronteras</h5>
+                            <p class="card-text">El programa de Psicología de la Universidad de Cundinamarca se distingue por su firme compromiso de formar profesionales líderes, éticos y críticos, con un profundo sentido de responsabilidad social.</p>
+                            <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+                                <div class="btn-group justify-content-md-end">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" href="Index.html">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="img/info3.jpeg" alt="" class="img-thumbnail" class="bd-placeholder-img card-img-top">
+                        <div class="card-body">
+                            <h5>Siguen los resultados positivos de nuestros deportistas</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet beatae quis tempora in ullam porro officia consequuntur obcaecati, explicabo expedita, dolor ipsa nesciunt quam repudiandae eveniet excepturi sapiente perferendis voluptate.</p>
+                            <div class="d-flex justify-content-between align-items-center flex-row-reverse">
+                                <div class="btn-group justify-content-md-end">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ 
+    <div class="b-example-divider"></div>
+    
+    
+    <!-- Feature -->
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom" id="AboutUs">Sobre nosotros</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <ion-icon name="server-outline"></ion-icon>
+                </div>
+                <h2>Bases de datos</h2>
+                <p>Contamos con servidores donde tenemos mas de 500 libros y material de apoyo para que tengas el mejor crecimiento de conocimiento. </p>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <ion-icon name="shield-half-outline"></ion-icon>
+                </div>
+                <h2>Seguridad</h2>
+                <p>Contamos con un esquema de seguridad dentro de las instalaciones donde no deberas preocuparte de nada en lo absoluto. </p>
+            </div>
+            <div class="feature col">
+                <div class="feature-icon bg-primary bg-gradient">
+                    <ion-icon name="tennisball-outline"></ion-icon>
+                </div>
+                <h2>Deporte</h2>
+                <p>Tenemos espacios y clases para que aproveches tu tiempo libre o tomes un descanso del dia. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+    <!-- <div id="b_t">
+        <p>Prueba de bootstrap</p>
+    </div> -->
+
+    <div class="b-example-divider"></div>
+
+<!-- footer -->
+<nav class="py-2 border-bottom d-flex align-content-center" style="background-color: rgb(155, 58, 58);">
+    <div class="container d-flex lign-content-center">
+        <ul class="nav me-auto d-flex align-items-center">
+            <li class="nav-item"><a href="#Registrations" class="nav-link link-light px-2 active" aria-current="page">Inscripciones</a></li>
+            <li class="nav-item"><a href="#news" class="nav-link link-light px-2">Noticias</a></li>
+            <li class="nav-item"><a href="#AboutUs" class="nav-link link-light px-2">Sobre nosotros</a></li>
+        </ul>
+        <ul>
+            <img src="img/Logo-Universitario.png" alt="" width="10%">
+        </ul>
+    </div>
+</nav>
+
+
+</body>
+</html>
